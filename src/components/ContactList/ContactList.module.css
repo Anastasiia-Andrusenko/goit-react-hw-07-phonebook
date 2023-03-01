@@ -1,0 +1,11 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smile {
+  margin-left: 10px;
+  font-size: 22px;
+  color: rgb(11, 0, 167);
+}
