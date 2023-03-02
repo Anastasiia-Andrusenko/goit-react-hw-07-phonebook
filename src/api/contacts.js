@@ -10,6 +10,9 @@ export const addContact = async(data) => {
   const response = await fetch(baseURL, {
     method: 'POST',
     body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    },
   }).then(response => response.json());
   return response;
 }
@@ -23,5 +26,3 @@ export const deleteContact = async (id) => {
 }
 
 
-
-// console.log(getAllContacts());

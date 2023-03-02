@@ -31,7 +31,7 @@ export const ContactList = () => {
   }
 
   const filteredContacts = filterContacts();
-  console.log(filteredContacts);
+  // console.log(filteredContacts);
 
   return <ul className="">
     {filteredContacts.length > 0 ? filteredContacts.map((contact =>

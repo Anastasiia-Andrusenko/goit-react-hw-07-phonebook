@@ -26,8 +26,6 @@ import { configureStore } from '@reduxjs/toolkit';
 // export const persistor = persistStore(store);
 
 
-
-
 import rootReducer from "./root-reducer";
 
 const store = configureStore({
