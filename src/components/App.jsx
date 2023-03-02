@@ -4,16 +4,13 @@ import { ContactList } from "./ContactList/ContactList";
 import ContactForm from "./ContactForm/ContactForm";
 import Filter from "./Filter/Filter";
 
-// !!!!!!!!!!!!!! щоб додати глобально доступ до стор
-import { Provider } from "react-redux";
-import {store, persistor} from "../redux/store";
 
-import { PersistGate } from 'redux-persist/integration/react';
+import { Provider } from "react-redux";
+import store from "../redux/store";
+
 
 const App = () => {
-
   return <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
       <div className="container">
         <div className="in_container">
           <div>
@@ -28,7 +25,6 @@ const App = () => {
         </div>
         <div className="circle"></div>
       </div>
-    </PersistGate>
   </Provider>
 }
 
