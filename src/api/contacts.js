@@ -18,11 +18,10 @@ export const addContact = async(data) => {
 }
 
 export const deleteContact = async (id) => {
-  console.log(id);
+  // console.log(id);
   const response = await fetch(`${baseURL}/${id}`, {
     method: "DELETE",
   }).then(response => response.json());
   return response;
 }
-
 
